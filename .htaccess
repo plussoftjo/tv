@@ -1,0 +1,10 @@
+#AddHandler x-httpd-php52 .php
+# Activate the rewrite engine
+RewriteEngine on 
+# Framework rewrite rule
+RewriteRule !\.(js|ico|txt|gif|GIF|jpg|JPG|jpeg|JPEG|png|PNG|css|php|swf|flv|pdf|html|ttf|eot|woff|svg|htm|xml|mp3)$ index.php
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
